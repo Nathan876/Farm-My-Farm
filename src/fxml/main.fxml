@@ -22,7 +22,6 @@
                         <items>
                             <MenuItem fx:id="marketMenuItem" mnemonicParsing="false" text="Market" />
                             <MenuItem fx:id="farmMenuItem" mnemonicParsing="false" text="Farm" />
-                            <MenuItem mnemonicParsing="false" text="Finance" />
                         </items>
                     </Menu>
                 </menus>
