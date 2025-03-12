@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CultivableLand" spacing="10">
+
+    <HBox spacing="10" alignment="CENTER">
+        <Label text="Carottes :" />
+        <Label fx:id="carrotsLabel" text="10" />
+
+        <Label text="Maïs :" />
+        <Label fx:id="cornLabel" text="10" />
+
+        <Label text="Blé :" />
+        <Label fx:id="wheatLabel" text="10" />
+
+        <Label text="Poules :" />
+        <Label fx:id="chickensLabel" text="10" />
+
+        <Label text="Vaches :" />
+        <Label fx:id="cowsLabel" text="10" />
+
+        <Label text="Oeufs :" />
+        <Label fx:id="eggsLabel" text="0" />
+
+        <Label text="Lait :" />
+        <Label fx:id="milkLabel" text="0" />
+
+        <Label text="Laine :" />
+        <Label fx:id="woolLabel" text="10" />
+
+        <Label text="Moutons :" />
+        <Label fx:id="sheepLabel" text="10" />
+
+        <Label text="Argent :" />
+        <Label fx:id="moneyLabel" text="500" />
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <ComboBox prefHeight="24.0" prefWidth="151.0" promptText="Sélectionner une graine" fx:id="seedComboBox"/>
+        <Label text="Graine sélectionnée :" fx:id="selectedSeedLabel"/>
+    </HBox>
+
+    <GridPane fx:id="gridPane" prefHeight="900" prefWidth="1000" xmlns:fx="http://javafx.com/fxml/1">
+    </GridPane>
+
+</VBox>

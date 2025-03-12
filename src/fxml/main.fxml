@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000" prefWidth="1000" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+
+    <top>
+        <VBox spacing="5">
+            <MenuBar useSystemMenuBar="false" BorderPane.alignment="CENTER">
+                <menus>
+                    <Menu mnemonicParsing="false" text="Menu">
+                        <items>
+                            <MenuItem fx:id="marketMenuItem" mnemonicParsing="false" text="Market" />
+                            <MenuItem fx:id="farmMenuItem" mnemonicParsing="false" text="Farm" />
+                            <MenuItem mnemonicParsing="false" text="Finance" />
+                        </items>
+                    </Menu>
+                </menus>
+            </MenuBar>
+        </VBox>
+    </top>
+
+    <center>
+        <AnchorPane fx:id="contentArea">
+            <fx:include source="cultivableLand.fxml"/>
+        </AnchorPane>
+    </center>
+
+    <bottom>
+        <Pane prefHeight="50.0" prefWidth="878.0" style="-fx-background-color: #cfcfcf;" BorderPane.alignment="CENTER">
+            <children>
+                <Text layoutX="14.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Solde : 2000 €" wrappingWidth="165.21630859375">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <Text layoutX="265.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock :" wrappingWidth="76.21630859375">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Text>
+                <Label layoutX="381.0" layoutY="30.0" prefHeight="17.0" prefWidth="138.0" text="🌾 : 0">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Label layoutX="381.0" layoutY="10.0" prefHeight="17.0" prefWidth="138.0" text="🌰 : 0">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+    </bottom>
+
+</BorderPane>
